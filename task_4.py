@@ -18,16 +18,18 @@
 Введите численность сотрудников фирмы: 10
 Прибыль фирмы в расчете на одного сотрудника = 50.0
 """
-revenue=int(input('Введите размер выручки: '))
-expensesint=int(input('Введите размер издержек: '))
-if revenue>expensesint:
-    print(f'Финансовый результат - прибыль. Ее величина {revenue-expensesint}')
-    print(f'Рентабельность: {(revenue-expensesint)/revenue} ')
-elif revenue<expensesint:
+revenue = int(input('Введите размер выручки: '))
+expensesint = int(input('Введите размер издержек: '))
+if revenue > expensesint:
+    print(
+        f'Финансовый результат - прибыль. Ее величина {revenue - expensesint}')
+    print(f'Рентабельность: {(revenue - expensesint) / revenue} ')
+elif revenue < expensesint:
     print('Финансовый результат - убыток. ')
 else:
     print('Финансовый результат - по нулям: ')
 
-if revenue>expensesint:
+if revenue > expensesint:
     staff = int(input('Введите число сотрудников: '))
-    print(f'Прибыль фирмы на одного сотрудника: {(revenue-expensesint)/staff}')
+    print(
+        f'Прибыль фирмы на одного сотрудника: {(revenue - expensesint) / staff}')
